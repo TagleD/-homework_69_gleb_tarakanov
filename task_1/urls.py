@@ -1,6 +1,6 @@
 from django.urls import path
 
-from task_1.views import add_view, subtract_view, multiply_view, divide_view
+from task_1.views import subtract_view, multiply_view, divide_view, add_view
 
 urlpatterns = [
     path('add/', add_view, name='add'),
