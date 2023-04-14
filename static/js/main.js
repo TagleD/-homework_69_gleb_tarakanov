@@ -20,7 +20,6 @@ addButton.addEventListener('click', function () {
     xhr.onload = function () {
         let data = JSON.parse(this.response);
         answer.innerText = `Answer: ${data.answer}`;
-        console.log(this.status);
         if (this.status === 200) {
             answer.style.color = 'green';
         } else {
@@ -55,7 +54,6 @@ multiplyButton.addEventListener('click', function () {
     xhr.onload = function () {
         let data = JSON.parse(this.response);
         answer.innerText = `Answer: ${data.answer}`;
-        console.log(this.status);
         if (this.status === 200) {
             answer.style.color = 'green';
         } else {
@@ -73,7 +71,6 @@ divideButton.addEventListener('click', function () {
     xhr.onload = function () {
         let data = JSON.parse(this.response);
         answer.innerText = `Answer: ${data.answer}`;
-        console.log(this.status);
         if (this.status === 200) {
             answer.style.color = 'green';
         } else {
